@@ -28,11 +28,11 @@ const TopMovie = ()=>{
 }
 
 
-const init = ()=>{
+
 
     setTimeout(TopMovie);
     setTimeout(TopPage,500);    
-};
+
 
 if($top_movie != null){
 
