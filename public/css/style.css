@@ -1,0 +1,734 @@
+@charset "utf-8";
+
+header{
+    height: 107px;
+    position:fixed;
+        top: 0;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+   
+}
+
+#header, #main,#thumbnail{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+#home {
+    background-color: black;
+    padding-bottom: 50px;
+    margin: 0;
+}
+#home .container {
+   display: none;
+}
+
+#serch {
+    background-color: black;
+    padding-bottom: 50px;
+    margin: 0;
+}
+#serch .container {
+   display: none;
+}
+
+
+#other {
+    background-color: white;
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+   
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+#logo {
+    padding: 10px 0 5px 145px; 
+    width: 555px;  
+    margin-left: 25px;
+}
+
+
+#menu {
+    float: right;
+    padding: 20px 20px 20px 0;
+    cursor: pointer;
+}
+
+.icon {
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    width: 80px;
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    top: 14px;
+}
+
+.icon_bk1 {
+    background-color: #F2994B;
+}
+
+.icon_bk2 {
+    background-color: #BDD9F2;
+}
+
+.icon_bk3 {
+    background-color: #044BD9;
+}
+
+.icon_bk4 {
+    background-color: #297343;
+}
+
+.icon_bk5 {
+    background-color: #F2C849;
+}
+
+.icon_bk6 {
+    background-color: #D90467;
+}
+
+.icon_bk7 {
+    background-color: #05F2F2;
+}
+
+.text_bk1 {
+    color: #F2994B;
+}
+
+.text_bk2 {
+    color: #BDD9F2;
+}
+
+.text_bk3 {
+    color: #044BD9;
+}
+
+.text_bk4 {
+    color: #297343;
+}
+
+.text_bk5 {
+    color: #F2C849;
+}
+
+.text_bk6 {
+    color: #D90467;
+}
+
+.text_bk7 {
+    color: #05F2F2;
+}
+
+.text_bk8 {
+    color: red;
+}
+
+#menu:active {
+   opacity: 0.5;
+}
+
+
+.top_movie {
+    width: 100%;
+    position: fixed;
+        top: -100px;
+        left: 0;
+}
+
+#main {
+    width: 100%;
+}
+
+#contents {
+    padding-top: 108px;
+    overflow: hidden;
+}
+
+#main {
+    padding: 0 20px;
+    color: red;
+    transition: transform 1.0s 1.0s;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#serch #main {
+    text-align: center;
+    color: white;
+    transition: transform 1.0s 1.0s;
+    display: block;
+}
+
+#serch #main h1{
+    text-align: center;   
+}
+
+#serch #main h3{
+    color: red;   
+}
+
+.index_movieCome {
+    padding: 0 10px;
+}
+
+.item {
+ 
+    width: 25%;
+}
+
+#serch .item {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.item h3{
+    text-align: center;
+}
+
+#home .item p{
+    color: aliceblue;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#serch .item p {
+    color: aliceblue;
+    display: block;
+    width: 55%;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.img_center {
+    text-align: center;
+    position: relative;
+}
+
+#serch .img_center {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#serch .movie_center {
+    text-align: center;
+    margin: 20px 0 0 0px;
+}
+
+iframe {
+    width: 550px;
+    height: 310px;
+}
+
+#serch #movie_come {
+    display: block;
+    width: 555px;
+}
+
+#serch #user_come {
+    display: block;
+    color: aqua;
+    text-align: center;
+}
+
+
+
+#contents .mainWidth {
+    width: 100%;
+}
+
+#contents .mainWidth_2 {
+    width: 85%;
+}
+
+#home #nav {
+    position:fixed;
+    top:0;
+    right:0px;
+    width: 200px;
+    height: 100%;
+    background-color: white;
+    padding-top: 108px;
+    transition: transform 0.5s;
+}
+
+#serch #nav {
+    position:fixed;
+    top:0;
+    right:0px;
+    width: 200px;
+    height: 100%;
+    background-color: white;
+    padding-top: 108px;
+    transition: transform 0.5s;
+}
+
+#other #nav {
+    position:fixed;
+    top:0;
+    right:0px;
+    width: 200px;
+    height: 100%;
+    background-color: black;
+    padding-top: 108px;
+    transition: transform 0.5s;
+}
+
+#other #nav a {
+    color: white;
+}
+
+
+.thumbnail {
+    cursor: pointer;
+    width: 63%;
+}
+
+.short {    
+    display: none;
+    cursor: pointer;
+    width: 80%;
+    position: absolute;
+        top:  0px;
+        left: 10%;
+}
+
+#home .short {
+    display: none;
+    cursor: pointer;
+    width: 62.5%;
+    position: absolute;
+    top: 0px;
+    left: 18.5%;
+}
+
+#serch .short {
+    display: none;
+    cursor: pointer;
+    width: 62.5%;
+    position: absolute;
+    top: 48px;
+    left: 18.5%;
+}
+
+.navSlide {
+    transform: translate3d(200px,0,0);  
+}
+#nav {
+    text-align: center;
+}
+
+#nav p {
+    margin: 0;
+    padding: 15px 0;    
+}
+
+#nav p:hover {
+ background-color: antiquewhite;
+}
+
+#other #nav p:hover {
+    color: black;
+    background-color: antiquewhite;
+}
+
+form {
+    display: inline-block;
+    padding: 20px;
+    margin: 65px 0 0 0;
+    border: #0788D9 1px solid;
+    border-radius: 20px;
+}
+
+#form_new {
+    margin: 50px 0 0 0;
+}
+
+form p {
+    text-align: left;
+    margin: 0 0 15px 0;
+}
+
+form p:last-child {
+    padding-top: 10px;
+    text-align: center;
+}
+
+form p span{
+    display: inline-block;
+    width: 150px;
+}
+
+.pass {
+    margin-bottom: 0;
+}
+
+.pass_com {
+    font-size: 15px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #1858D9;
+    font-weight: bold;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+
+
+#other #main {
+    text-align: center;
+    width: 100%;    
+    color: #0788D9;
+    transition: transform 1.0s 1.0s;
+    display: block;
+    border-radius: 10px;
+}
+
+input[type="text"],input[type="password"],input[type="email"] {
+    font-size: 16px;
+    padding: 10px 10px;
+    border: #0788D9 1px solid;
+}
+
+
+input[type="submit"] {
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: #0788D9 5px solid;
+    background-color: #0788D9;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    font-weight: bold;
+    color: #0788D9;
+    background-color: white;
+
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 0;
+    
+}
+
+#search {
+    cursor: pointer;
+}
+
+#form_search{
+    display: none;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 8px 10px;
+    text-align: center;
+
+}
+
+.searchBk {
+    background-color: antiquewhite;
+}
+
+#nav .active {
+    display: inline-block;
+}
+
+#form_search input[type="text"] {
+    margin: 0 0 10px 0;
+    width: 150px;
+    font-size: 14px;
+}
+
+.item .input_css {
+    display: inline-block;
+    background-color: black;
+    border:none;
+    color: white;
+    border-bottom: 2px solid #0788D9;
+    font-size: 16px;
+    padding: 10px;
+    width: 600px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.item .submit_css {
+    position: relative;
+    top: -16px;
+}
+
+#form_come {
+    text-align: center;
+}
+
+#user_name {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0788D9;
+    border-bottom: 2px solid #0788D9;
+    position: relative;
+        top: -13px;
+}
+
+
+#count{
+    display: inline-block;
+    padding: 0 15px 0 5px;
+}
+
+.item form {
+    display: inline;
+    padding: 0px;
+    margin:  0px;
+    border:none;
+    border-radius: 20px;
+}
+
+.users_come {
+    margin-bottom: 50px;
+}
+
+
+table td {
+    padding: 10px 10px 10px 0;
+}
+
+
+.user_come td:nth-child(2) {
+    padding: 10px 0 61px 100px;
+    width: 630px;
+}
+
+.user_name {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 53px;
+    font-size: 38px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+}
+
+.comment {
+    opacity: 0.9;
+}
+
+.come_null {
+    display: block;
+    text-align: center;
+    color: #F2B544;
+    font-weight: bold;
+}
+
+#serch .item #accessory {
+    text-align: right;
+    width: 530px;
+    margin: 0 auto;
+}
+
+.history_none {
+    display: inline-block;
+    padding-top: 10px;
+    color: #0788D9;
+}
+
+.good_btn{
+    position: relative;
+    top:    6px;
+    left: -1px;
+}
+
+#user_data p{
+    padding-left: 50px;
+}
+
+.secret {
+    -webkit-text-security: disc !important;
+}
+
+form .dalete {
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: #F23D3D 5px solid;
+    background-color: #F23D3D;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.dalete:hover {
+    color: #F23D3D;
+    background-color: white;
+    font-weight: bold;
+}
+
+#logo_del {
+    width: 200px;
+    margin: 0 10px;
+    position: relative;
+        top: 8px;
+}
+
+#user_data .cancel {
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: #0788D9 5px solid;
+    background-color: #0788D9;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#user_data .cancel:hover {
+    color: #0788D9;
+    font-weight: bold;
+    background-color: white;
+}
+
+
+
+table .come_del {
+ 
+    color: white;
+    font-size: 13px;
+    padding: 5px 5px;
+    border: #F23D3D 5px solid;
+    background-color: #F23D3D;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+table .come_del:hover {
+    color: #F23D3D;
+    background-color: black;
+    font-weight: bold;
+}
+
+.user_come table {
+    padding: 10px 0 30px 0;
+    position: relative;
+}
+
+.user_come table tr{
+    position: relative;
+}
+
+
+.user_come table td{
+    text-align: left;
+}
+
+
+#serch #main .short_recommend {
+    position: absolute;
+    top: 0px;
+    left: 19%;
+    width: 62.5%;
+
+}
+
+#user_data_table {
+    margin-bottom: 20px;
+}
+
+
+#user_data_table td:first-child {
+    width: 130px;
+    text-align: left;
+  
+}
+
+#user_data_table td:nth-child(2) {
+    width: 0px;
+    text-align: left;
+
+}
+
+.come_user {
+    position: absolute;
+      top: 63px;
+  
+}
+
+.good_btn {
+    cursor: pointer;
+}
+
+#thumbnail {
+    text-align: center;
+    height: 0;
+}
+
+
+
+#play {    
+    cursor: pointer;
+    width: 552px;
+    position: relative;
+        top: 20px;
+}
+
+#Youtube {
+    text-align: center;
+    color: white;
+    background-color: red;
+    border-radius: 45px;
+    font-weight: bold;
+    font-size: 60px;
+    z-index: 10;
+    opacity: 0.5;
+    width: 406px;
+    margin: 0 auto;
+    position: relative;
+    top: -200px;
+    cursor: pointer;
+}
+
+.come_span {
+    display: inline-block;
+    width: 80px;
+}
+
